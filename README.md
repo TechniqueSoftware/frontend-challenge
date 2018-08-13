@@ -1,6 +1,6 @@
 # Front-end Code Challenge - 2018
 
-In this code challenge, you'll demonstrate your programming abilities by building a data-driven, component-based application. We expect the challenge to take you about four hours.
+In this code challenge, you'll demonstrate your programming abilities by building a data-driven, component-based application. We expect the challenge to take you about four to six hours.
 
 ### Getting Started
 
@@ -19,15 +19,11 @@ An app should now be running on your machine. Templating, babel and hot-reloadin
 
 ### Instructions
 
-The product team would like you to create a dashboard for health clubs and studios. The dashboard will help them determine when they should run promotions for membership agreements. The success of a promotion relies on the day of the promotion and the popularity of a membership agreement. Conveniently, we already have a few endpoints that provides this information for one of our clients.
+The product team would like you to create a dashboard for health clubs and studios. This dashboard will help club owners determine when they should run promotions for membership agreements. The success of a promotion relies on check-in volume and the popularity of a membership agreement.
 
-* `GET locations`
-* `GET locations/{locationId}/member-checkins`
-* `GET locations/{locationId}/member-agreements`
-* The API is under [https://code-challenge-api.club-os.com/api](https://code-challenge-api.club-os.com/api)
-    * Example: [https://code-challenge-api.club-os.com/api/locations/1/member-checkins](https://code-challenge-api.club-os.com/api/locations/1/member-checkins)
+#### Design/Functionality
 
-Implement the following features. Your app should look nice and feature accessibility, but functionality is the first priority. Use the wireframe below as a guide.
+Implement the following features. Your app should look nice and feature basic accessibility, however, **functionality is the highest priority**. Use the wireframe below as a guide.
 
 ![design mockup](./design-mockup.png)
 
@@ -39,6 +35,18 @@ Implement the following features. Your app should look nice and feature accessib
     * Note: If there's a tie for any stat, show both/all results
 1. Widgets can be removed from the dashboard
 1. A date range input allows users to filter the data to use for statistics for any given time period
+
+#### Data
+
+To develop the dashboard, request data an API for one of our mock clients.
+
+* `GET locations`
+* `GET locations/{locationId}/member-checkins`
+* `GET locations/{locationId}/member-agreements`
+* The API is under [https://code-challenge-api.club-os.com/api](https://code-challenge-api.club-os.com/api)
+    * Example: [https://code-challenge-api.club-os.com/api/locations/1/member-checkins](https://code-challenge-api.club-os.com/api/locations/1/member-checkins)
+    
+#### Testing
 
 Our engineering team uses testing to prevent bugs and fuel a culture of confidence and trust. There are many things that can be tested, but we'd like you to focus on the following.
 
@@ -73,10 +81,11 @@ When you've completed the code challenge, zip the project and attach it in a res
 
 ### Evaluation
 
-What are we looking for in your code? We'll be evaluating submissions in this order:
+What are we looking for in your submission? We'll be evaluating submissions in this order:
 
 * Functional application
 * Clear, well written and structured code
 * Passing tests
 * Sensible design with accessibility features
+* Evaluation of scalability
 * Amount of criteria met
