@@ -4,7 +4,9 @@ In this code challenge, you'll demonstrate your programming abilities by buildin
 
 ### Getting Started
 
-Clone, bootstrap and start the project:
+Two projects are available – Vue and React. If you haven't used either framework, and you're most experienced with Angular, we suggest using Vue.
+
+Clone, bootstrap and start a project:
 
 ```
 $ git clone git@github.com:TechniqueSoftware/frontend-challenge.git
@@ -13,15 +15,17 @@ $ npm install
 $ npm start
 ```
 
-An app should now be running on your machine. JSX, babel and hot-reloading have been included.
+An app should now be running on your machine. Templating, babel and hot-reloading have been included.
 
 ### Instructions
 
 The product team would like you to create a dashboard for health clubs and studios. The dashboard will help them determine when they should run promotions for membership agreements. The success of a promotion relies on the day of the promotion and the popularity of a membership agreement. Conveniently, we already have a few endpoints that provides this information for one of our clients.
 
-* `GET api/locations`
-* `GET api/locations/{locationId}/member-checkins`
-* `GET api/locations/{locationId}/member-agreements`
+* `GET locations`
+* `GET locations/{locationId}/member-checkins`
+* `GET locations/{locationId}/member-agreements`
+* The API is under [https://code-challenge-api.club-os.com/api](https://code-challenge-api.club-os.com/api)
+    * Example: [https://code-challenge-api.club-os.com/api/locations/1/member-checkins](https://code-challenge-api.club-os.com/api/locations/1/member-checkins)
 
 Implement the following features. Your app should look nice and feature accessibility, but functionality is the first priority. Use the wireframe below as a guide.
 
@@ -32,6 +36,7 @@ Implement the following features. Your app should look nice and feature accessib
     * A stat of the busiest weekday (Monday, Tuesday, etc.) for the selected location
     * A stat of the most popular agreement for the selected location
     * A stat of the most popular agreement on the busiest weekday for the selected location
+    * Note: If there's a tie for any stat, show both/all results
 1. Widgets can be removed from the dashboard
 1. A date range input allows users to filter the data to use for statistics for any given time period
 
@@ -39,7 +44,7 @@ Our engineering team uses testing to prevent bugs and fuel a culture of confiden
 
 1. Test statistic logic
 1. Test major components
-1. Tests should be runnable by
+1. Tests should be runnable by:
 
 ```
 $ npm test
