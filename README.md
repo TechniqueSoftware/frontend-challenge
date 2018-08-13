@@ -38,7 +38,7 @@ Implement the following features. Your app should look nice and feature basic ac
 
 #### Data
 
-To develop the dashboard, request data an API for one of our mock clients.
+To develop the dashboard, request data from an API for one of our mock clients.
 
 * `GET locations`
 * `GET locations/{locationId}/member-checkins`
