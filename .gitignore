@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+
+# osx
+.DS_Store
+
+# npm
+npm-debug.log*
+npm-error.log*
+
+# intellij
+.idea/*
+*.iml
