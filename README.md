@@ -77,7 +77,7 @@ Here are some resources we'd use to complete the code challenge. Feel free to us
 
 ### Submission
 
-When you've completed the code challenge, zip the project and attach it in a response to the code challenge email. Include your evaluation notes, and if you'd like, tell us about your code or how you think the challenge went!
+When you've completed the code challenge, remove the node_modules directory, zip the project and attach it in a response to the code challenge email. Include your evaluation notes, and if you'd like, tell us about your code or how you think the challenge went!
 
 ### Evaluation
 
