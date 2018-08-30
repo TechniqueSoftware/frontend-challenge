@@ -29,12 +29,12 @@ Implement the following features. Your app should look nice and feature basic ac
 
 1. Many widgets can be added to the dashboard. Each widget contains:
     * A select input for selecting a location
-    * A stat of the busiest weekday (Monday, Tuesday, etc.) for the selected location
+    * A stat of the busiest day of the week (Sunday, Monday, etc.) for the selected location
     * A stat of the most popular agreement for the selected location
-    * A stat of the most popular agreement on the busiest weekday for the selected location
+    * A stat of the most popular agreement on the busiest day of the week for the selected location
     * Note: If there's a tie for any stat, show both/all results
 1. Widgets can be removed from the dashboard
-1. A date range input allows users to filter the data to use for statistics for any given time period
+1. A date range input allows users to filter the data to use for statistics for any given time period (inclusive, so start time should be at 00:00 and end time should be 23:59)
 
 #### Data
 
